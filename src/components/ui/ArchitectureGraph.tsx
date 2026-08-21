@@ -28,7 +28,7 @@ export function ArchitectureGraph() {
 
   const item = {
     hidden: { opacity: 0, scale: 0.9, y: 10 },
-    show: { opacity: 1, scale: 1, y: 0, transition: { type: "spring", stiffness: 100 } },
+    show: { opacity: 1, scale: 1, y: 0, transition: { type: "spring" as const, stiffness: 100 } },
   };
 
   return (

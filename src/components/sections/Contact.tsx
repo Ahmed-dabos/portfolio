@@ -5,8 +5,8 @@ import { Code2, Users, Mail, MessageCircle, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 const links = [
-  { name: "GitHub", href: "[ADD GITHUB URL]", icon: Code2 },
-  { name: "LinkedIn", href: "[ADD LINKEDIN URL]", icon: Users },
+  { name: "GitHub", href: "https://github.com/Ahmed-dabos", icon: Code2 },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/ahmed-abdelsalam-501b5a323/", icon: Users },
   { name: "Email", href: "mailto:ahmedghazydabos@gmail.com", icon: Mail },
   { name: "WhatsApp", href: "https://wa.me/201229152948", icon: MessageCircle },
 ];
