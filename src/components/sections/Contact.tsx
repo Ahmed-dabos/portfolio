@@ -43,14 +43,16 @@ export function Contact() {
                   transition={{ delay: index * 0.1, duration: 0.5 }}
                   className="w-full sm:w-auto"
                 >
-                  <Link
+                  <a
                     href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group flex items-center justify-center gap-3 px-8 py-4 bg-card border border-border rounded-full hover:border-accent hover:bg-accent/5 transition-all text-foreground font-medium w-full sm:w-auto"
                   >
                     <Icon className="w-5 h-5 group-hover:text-accent transition-colors" />
                     <span>{link.name}</span>
                     <ArrowUpRight className="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                  </Link>
+                  </a>
                 </motion.div>
               );
             })}

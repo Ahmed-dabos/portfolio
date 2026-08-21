@@ -37,8 +37,11 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 max-w-6xl flex items-center justify-between">
         {/* Logo */}
-        <Link href="#home" className="text-xl font-bold tracking-tighter">
-          AG<span className="text-accent">.</span>
+        <Link href="#home" className="text-2xl font-black tracking-tighter flex items-baseline gap-1 group">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/60 group-hover:from-accent group-hover:to-accent/50 transition-all duration-500">
+            dabooooos
+          </span>
+          <span className="w-2 h-2 rounded-full bg-accent group-hover:scale-150 transition-transform duration-500" />
         </Link>
 
         {/* Desktop Nav */}

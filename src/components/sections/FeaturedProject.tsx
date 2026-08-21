@@ -108,18 +108,18 @@ export function FeaturedProject() {
               </div>
 
               <div className="pt-6 border-t border-border flex flex-col gap-3">
-                <Link
+                <a
                   href="[ADD GITHUB URL]"
                   className="flex items-center justify-center gap-2 w-full py-3 bg-foreground text-background font-medium rounded-xl hover:bg-foreground/90 transition-colors"
                 >
                   View Source Code
-                </Link>
-                <Link
+                </a>
+                <a
                   href="[ADD LIVE DEMO]"
                   className="flex items-center justify-center gap-2 w-full py-3 bg-transparent border border-border text-foreground font-medium rounded-xl hover:bg-accent/10 hover:border-accent/30 transition-colors"
                 >
                   Live Demo
-                </Link>
+                </a>
               </div>
             </motion.div>
           </div>

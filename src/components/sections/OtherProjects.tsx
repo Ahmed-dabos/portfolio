@@ -75,14 +75,14 @@ export function OtherProjects() {
               </div>
 
               <div className="flex items-center gap-4 mt-auto pt-4 border-t border-border">
-                <Link href={project.github} className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5 text-sm font-medium">
+                <a href={project.github} className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5 text-sm font-medium">
                   <Code2 className="w-4 h-4" />
                   Code
-                </Link>
-                <Link href={project.demo} className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5 text-sm font-medium">
+                </a>
+                <a href={project.demo} className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5 text-sm font-medium">
                   <ExternalLink className="w-4 h-4" />
                   Demo
-                </Link>
+                </a>
               </div>
             </motion.div>
           ))}
