@@ -27,22 +27,26 @@ export function Navbar() {
   }, []);
 
   return (
-    <header
-      className={cn(
-        "fixed top-0 inset-x-0 z-50 transition-all duration-300",
-        isScrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-border py-4"
-          : "bg-transparent py-6"
-      )}
-    >
-      <div className="container mx-auto px-6 max-w-6xl flex items-center justify-between">
-        {/* Logo */}
-        <Link href="#home" className="text-2xl font-black tracking-tighter flex items-baseline gap-1 group">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/60 group-hover:from-accent group-hover:to-accent/50 transition-all duration-500">
-            dabooooos
-          </span>
-          <span className="w-2 h-2 rounded-full bg-accent group-hover:scale-150 transition-transform duration-500" />
-        </Link>
+    <header className="fixed top-0 inset-x-0 z-50 flex flex-col shadow-sm">
+      <div className="w-full bg-accent text-background text-xs sm:text-sm font-semibold py-2 text-center px-4 z-50">
+        Notice: The project details and links are not added yet. This is currently just a live demo layout.
+      </div>
+      <div
+        className={cn(
+          "w-full transition-all duration-300",
+          isScrolled
+            ? "bg-background/80 backdrop-blur-md border-b border-border py-4"
+            : "bg-transparent py-6"
+        )}
+      >
+        <div className="container mx-auto px-6 max-w-6xl flex items-center justify-between">
+          {/* Logo */}
+          <Link href="#home" className="text-2xl font-black tracking-tighter flex items-baseline gap-1 group">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/60 group-hover:from-accent group-hover:to-accent/50 transition-all duration-500">
+              dabooooos
+            </span>
+            <span className="w-2 h-2 rounded-full bg-accent group-hover:scale-150 transition-transform duration-500" />
+          </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8">
@@ -106,6 +110,7 @@ export function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
+      </div>
     </header>
   );
 }
